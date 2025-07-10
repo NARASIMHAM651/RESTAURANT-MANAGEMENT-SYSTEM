@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="Order.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Restaurant Management System</h1>
+    </header>
+<nav>
+    <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="Order.html">Order</a></li>
+        
+        <li><a href="reservation.html">Table Reservation</a></li>
+        
+       
+        <li><a href="staff.html">staff</a></li>
+        <li><a href="feedback.html">feedback</a></li>
+        <li><a href="index.html">logout</a></li>
+    </ul>
+</nav>
+
+<body>
+    <div class="container">
+        <form class="feedback-form" action="submit_feedback.php" method="POST">
+            <h2>Feedback Form</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+    
+</body>
+</body>
+</html>

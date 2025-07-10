@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+    
+        <div class="random-number">
+            <p id="random-number"></p>
+            <button onclick="generateRandomNumber()">Submit Reservation</button>
+            <p id="success-message" style="display: none; color: green;">Reservation successfully submitted!</p>
+        </div>
+    </div>
+
+    <script>
+        function generateRandomNumber() {
+            // Generate a random number between 1 and 100
+            const randomNumber = Math.floor(Math.random() * 100) + 1;
+            document.getElementById('random-number').textContent = "Random Number: " + randomNumber;
+            
+            // Display the success message
+            const successMessage = document.getElementById('success-message');
+            successMessage.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Creation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input[type="number"] {
+            width: 50%;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #218838;
+        }
+        .success-message {
+            display: none;
+            padding: 10px;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Create Order</h2>
+    
+    <!-- Success message that will appear when the order is successfully placed -->
+    <div class="success-message" id="successMessage">
+        <strong>Success!</strong> Your order has been placed successfully.
+    </div>
+    
+    <form action="order_submit.php" method="POST">
+        <!-- Customer Details -->
+        <div class="form-group">
+            <label for="customerName">Name:</label>
+            <input type="text" id="customerName" name="customerName" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="customerEmail">Email:</label>
+            <input type="email" id="customerEmail" name="customerEmail" required>
+        </div>
+
+        <div class="form-group">
+            <label for="customerAddress">Address:</label>
+            <textarea id="customerAddress" name="customerAddress" rows="4" required></textarea>
+        </div>
+        
+        <!-- Product Details -->
+        <div class="form-group">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="price">Price per Unit:</label>
+            <input type="number" id="price" name="price" step="0.01" min="0" required>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+            <button type="submit">Submit Order</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    // Check if the URL contains the success flag
+    const urlParams = new URLSearchParams(window.location.search);
+    const success = urlParams.get('success');
+    if (success) {
+        document.getElementById('successMessage').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

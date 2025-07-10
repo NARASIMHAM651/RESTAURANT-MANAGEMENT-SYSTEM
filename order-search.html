@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Search</title>
+</head>
+<body>
+    <h1>Order Search</h1>
+    <form action="/search_order" method="GET">
+        <!-- Search by Order ID -->
+        <label for="order-id">Order ID:</label>
+        <input type="text" id="order-id" name="order-id" placeholder="Enter Order ID">
+        <br><br>
+
+        <!-- Search by Customer Name -->
+        <label for="customer-name">Customer Name:</label>
+        <input type="text" id="customer-name" name="customer-name" placeholder="Enter Customer Name">
+        <br><br>
+
+        <!-- Search by Order Date -->
+        <label for="order-date">Order Date:</label>
+        <input type="date" id="order-date" name="order-date">
+        <br><br>
+
+        <!-- Search by Status -->
+        <label for="status">Order Status:</label>
+        <select id="status" name="status">
+            <option value="">Select Status</option>
+            <option value="pending">Pending</option>
+            <option value="shipped">Shipped</option>
+            <option value="delivered">Delivered</option>
+            <option value="canceled">Canceled</option>
+        </select>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Search Order</button>
+    </form>
+</body>
+</html>

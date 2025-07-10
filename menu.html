@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management System</title>
+    <link rel="stylesheet" href="Order.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin: 20px auto;
+            width: 80%;
+            background-color:white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        table thead {
+            background-color: #333;
+            color: white;
+        }
+        table th, table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        table th {
+            text-align: center;
+        }
+        table td {
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Restaurant Management System</h1>
+    </header>
+    
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="Order.html">Order</a></li>
+            <li><a href="reservation.html">Table Reservation</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="payment_history.html">Payment History</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Desserts Section -->
+    <section>
+        <h2>DESSERTS</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.NO</th>
+                    <th>ITEM NAME</th>
+                    <th>PRICE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Le Miel</td>
+                    <td>$120</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Chocolate Explosion</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Fruit Éclair</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mousse</td>
+                    <td>$150</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <!-- Biryani Section -->
+    <section>
+        <h2>BIRYANI</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.NO</th>
+                    <th>ITEM NAME</th>
+                    <th>PRICE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mutton Biryani</td>
+                    <td>$450</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Chicken Biryani</td>
+                    <td>$250</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Egg Biryani</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mixed Biryani</td>
+                    <td>$650</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <!-- Pizza Section -->
+    <section>
+        <h2>PIZZAS</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.NO</th>
+                    <th>ITEM NAME</th>
+                    <th>PRICE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Margherita Pizza</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pepperoni Pizza</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Hawaiian Pizza</td>
+                    <td>$25</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Meat Lover's Pizza</td>
+                    <td>$60</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Restaurant Management System</p>
+    </footer>
+
+</body>
+</html>

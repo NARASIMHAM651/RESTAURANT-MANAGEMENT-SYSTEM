@@ -1,0 +1,12 @@
+*{
+    margin: 2px;
+    padding-right: 3;
+    box-sizing: border-box;
+}
+body{
+    text-align: right;
+}
+header{
+    background-color: blue;
+    text-align: right;
+}

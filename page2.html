@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management System</title>
+    <link rel="stylesheet" href="menu.css"> 
+<body>
+    <header>
+        <h1>Restaurant Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#menu" onclick="showMenu()">Menu</a></li>
+            <li><a href="#orders">Orders</a></li>
+            <li><a href="#reservations">Reservations</a></li>
+            <li><a href="#staff">Staff</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <li><a href="#about">about</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div id="menuItems" style="display: none;">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                
+            </div>
+        </section>
+        <section id="orders">
+            <h2>Orders</h2>
+           
+            <div>
+                
+                <ul>
+                    <li>Order 1</li>
+                    <li>Order 2</li>
+                    <li>Order 3</li>
+                    
+                </ul>
+            </div>
+        </section>
+        
+        <section id="reservations">
+            <h2>Reservations</h2>
+           
+            <div>
+                
+                <ul>
+                    <li>Reservation 1</li>
+                    <li>Reservation 2</li>
+                    <li>Reservation 3</li>
+                    
+                </ul>
+            </div>
+        </section>
+        
+        <section id="staff">
+            <h2>Staff</h2>
+            
+            <div>
+                
+                <ul>
+                    <li>Staff Member 1</li>
+                    <li>Staff Member 2</li>
+                    <li>Staff Member 3</li>
+                    
+                </ul>
+            </div>
+        </section>
+        
+        <section id="reports">
+            <h2>Reports</h2>
+            
+            <div>
+             
+                <p>Report 1</p>
+                <p>Report 2</p>
+                <p>Report 3</p>
+                
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Restaurant Management System</p>
+    </footer>
+
+    <script>
+        function showMenu() {
+            var menuItems = document.getElementById("menuItems");
+            if (menuItems.style.display === "none") {
+                menuItems.style.display = "block";
+            } else {
+                menuItems.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

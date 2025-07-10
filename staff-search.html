@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Search</title>
+    <link rel="stylesheet" href="staff.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Restaurant Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="Order.html">Orders</a></li>
+            
+            <li><a href="reservation.html">Table Reservation</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Staff Search</h2>
+            <form action="search_staff.php" method="GET">
+                <label for="search">Search Staff:</label>
+                <input type="text" id="search" name="search" placeholder="Enter staff name or ID">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section>
+            <h2>Search Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Staff ID</th>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Add rows for search results dynamically using server-side scripting or JavaScript -->
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>Waiter</td>
+                        <td>johndoe@example.com</td>
+                        <td>123-456-7890</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+</body>
+</html>

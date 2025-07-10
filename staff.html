@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Management</title>
+    <link rel="stylesheet" href="Order.css"> 
+</head>
+<body>
+    <header>
+        <h1>Restaurant Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="Order.html">Orders</a></li>
+            
+            <li><a href="reservation.html">Table Reservation</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="payment history.html">payment history</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+    <h2>Add Staff</h2>
+    <form action="submit_staff.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+            <option value="waitstaff">Waitstaff</option>
+            <option value="chef">Chef</option>
+            <option value="manager">Manager</option>
+        </select><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <button type="submit">Add Staff</button>
+    </form>
+
+    <h2>Delete Staff</h2>
+    <form action="delete_staff.php" method="POST">
+        <label for="staff_id">Staff ID:</label>
+        <input type="number" id="staff_id" name="staff_id" required><br><br>
+        
+        <button type="submit">Delete Staff</button>
+    </form>
+
+    <h2>Manage Working Hours</h2>
+    <form action="update_hours.php" method="POST">
+        <label for="staff_id">Staff ID:</label>
+        <input type="number" id="staff_id" name="staff_id" required><br><br>
+        
+        <label for="start_time">Start Time:</label>
+        <input type="time" id="start_time" name="start_time" required><br><br>
+        
+        <label for="end_time">End Time:</label>
+        <input type="time" id="end_time" name="end_time" required><br><br>
+        
+        <button type="submit">Update Hours</button>
+    </form>
+
+    <h2>Assign Shifts</h2>
+    <form action="assign_shift.php" method="POST">
+        <label for="staff_id">Staff ID:</label>
+        <input type="number" id="staff_id" name="staff_id" required><br><br>
+        
+        <label for="shift_date">Shift Date:</label>
+        <input type="date" id="shift_date" name="shift_date" required><br><br>
+        
+        <button type="submit">Assign Shift</button>
+    </form>
+</body>
+</html>
